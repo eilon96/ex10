@@ -1,15 +1,17 @@
+from game_objects import *
 
-
-class Ship:
+class Ship(GameObject):
     """"""
 
-    def __init__(self, start_location_x, start_location_y):
-        """"""
-        self.__ship_location_x = start_location_x
-        self.__ship_location_y = start_location_y
-        self.__ship_speed_x = 0
-        self.__ship_speed_y = 0
-        self.__ship_direction = 0
-        self.__life = 3
+    def __init__(self, start_location_x, start_location_y,
+                 speed_x=0, speed_y=0, direction=0):
+        GameObject.__init__(self, start_location_x, start_location_y,
+                 speed_x, speed_y, direction)
 
-        # def __str__
+
+
+
+
+
+
+
